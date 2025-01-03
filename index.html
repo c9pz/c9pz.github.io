@@ -1,206 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>max96git</title>
-
-    <!-- Personal Webpage Styles -->
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0e0e0e;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            color: #ffffff;
-            background: url('https://em-content.zobj.net/source/microsoft/378/slightly-smiling-face_1f642.png') repeat;
-            background-size: 100px; /* Adjust the size of the emoji */
-        }
-
-        header {
-            background-color: #121212;
-            color: #ffffff;
-            padding: 20px;
-            border-bottom: 4px solid #1a1a1a;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-radius: 15px;
-            transition: background-color 0.5s ease, box-shadow 0.5s ease; /* Smooth transitions */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow */
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 60px; /* Reverted to the previous size */
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: -2px;
-            color: #ff5e00;
-            transition: color 0.5s ease; /* Smooth text color transition */
-        }
-
-        p {
-            color: #999999;
-            font-size: 18px; /* Reverted to the previous size */
-            line-height: 1.8;
-            margin-top: 20px;
-        }
-
-        section {
-            padding: 50px;
-            margin: 30px 0;
-            background-color: #1a1a1a;
-            border-radius: 25px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9);
-            transition: box-shadow 0.5s ease; /* Smooth box shadow transition */
-        }
-
-        footer {
-            background-color: #121212;
-            color: #999999;
-            padding: 40px;
-            text-align: center;
-            margin-top: 30px;
-            border-radius: 20px;
-            transition: background-color 0.5s ease; /* Smooth background color transition */
-        }
-
-        /* Hover effects */
-        header:hover {
-            background-color: #1e1e1e;
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
-        }
-
-        h1:hover {
-            color: #ffffff;
-        }
-
-        section:hover {
-            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.9);
-        }
-
-        footer:hover {
-            background-color: #1e1e1e;
-        }
-
-        /* Modern styling */
-        header {
-            backdrop-filter: blur(15px);
-        }
-
-        section {
-            backdrop-filter: blur(8px);
-        }
-
-        footer {
-            backdrop-filter: blur(15px);
-        }
-
-        /* Skills Section */
-        .skills {
-            margin-top: 40px;
-        }
-
-        .skill-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .skill-label {
-            flex: 1;
-            margin-right: 10px;
-        }
-
-        .skill-progress {
-            flex: 3;
-            background-color: #2a2a2a;
-            height: 20px;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .skill-progress-inner {
-            height: 100%;
-            background-color: #ff5e00;
-            border-radius: 10px;
-        }
-    </style>
-
-    <!-- Include the Inter font from Google Fonts for the personal webpage -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>c9pz Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f4f4f9;
+    }
+    header {
+      background: #0077cc;
+      color: white;
+      padding: 1.5em 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    section {
+      padding: 1.5em;
+      margin: auto;
+      max-width: 800px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      margin-bottom: 1.5em;
+    }
+    h2 {
+      color: #0077cc;
+    }
+    .projects div {
+      margin-bottom: 1.5em;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: bold;
+      color: white;
+      background-color: #28a745;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #218838;
+    }
+    footer {
+      text-align: center;
+      padding: 1em 0;
+      background: #0077cc;
+      color: white;
+      margin-top: 1.5em;
+    }
+  </style>
 </head>
 <body>
-
-<!-- Personal Webpage Header -->
-<header>
-    <h1>Max96git</h1>
-    <p>hi</p>
-</header>
-
-<!-- Personal Webpage Content -->
-<section>
+  <header>
+    <h1>Welcome to c9pz's Portfolio</h1>
+  </header>
+  <section>
     <h2>About Me</h2>
-    <p>
-        Hi, I'm max96git, a passionate Roblox developer, 3D modeler, and scripter. 
-        I enjoy creating immersive experiences and bringing ideas to life in the digital world. 
-        My skills include Roblox Studio, scripting, and 3D modeling. 
-        Thanks for checking my webpage :D
-    </p>
-</section>
-
-<!-- Skills Section -->
-<section class="skills">
-    <h2>Skills</h2>
-
-    <!-- Luau Skill -->
-    <div class="skill-item">
-        <div class="skill-label">Luau</div>
-        <div class="skill-progress">
-            <div class="skill-progress-inner" style="width: 59%;"></div>
-        </div>
+    <p>Hi, I'm c9pz, a passionate developer specializing in web development and modern software solutions. This portfolio showcases some of my work.</p>
+  </section>
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div>
+        <strong>Project 1:</strong>
+        <a class="btn" href="https://example.com">View Project</a>
+      </div>
+      <div>
+        <strong>Project 2:</strong>
+        <a class="btn" href="https://example.com">View Project</a>
+      </div>
     </div>
-
-    <!-- VBS Skill -->
-    <div class="skill-item">
-        <div class="skill-label">VBS</div>
-        <div class="skill-progress">
-            <div class="skill-progress-inner" style="width: 92%;"></div>
-        </div>
-    </div>
-
-    <!-- HTML Skill -->
-    <div class="skill-item">
-        <div class="skill-label">HTML</div>
-        <div class="skill-progress">
-            <div class="skill-progress-inner" style="width: 99%;"></div>
-        </div>
-    </div>
-
-    <!-- CSS Skill -->
-    <div class="skill-item">
-        <div class="skill-label">CSS</div>
-        <div class="skill-progress">
-            <div class="skill-progress-inner" style="width: 10%;"></div>
-        </div>
-    </div>
-
-    <!-- Paint 3D Skill -->
-    <div class="skill-item">
-        <div class="skill-label">Paint 3D</div>
-        <div class="skill-progress">
-            <div class="skill-progress-inner" style="width: 100%;"></div>
-        </div>
-    </div>
-</section>
-
-<!-- Personal Webpage Footer -->
-<footer>
-    <p>i dont know how to script modules :/</p>
-</footer>
-
+  </section>
+  <footer>
+    <p>&copy; 2025 c9pz. All rights reserved.</p>
+  </footer>
 </body>
 </html>
